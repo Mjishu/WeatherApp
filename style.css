@@ -1,0 +1,15 @@
+
+
+#searchBar{
+    border: none;
+    border-bottom: 1px black solid;
+}
+
+#searchBar:active{
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+
+
+/* todo: make the cursor like a cloud or something to do with the temperature in the area */
