@@ -1,15 +1,57 @@
+:root{
+    --font1: calibri;
+    --font2: Gill Sans;
+}
 
+body{
+    font-family: var(--font1);
+    background: url('./Images/pexels-finn-protzmann-2197889.jpg')no-repeat center center fixed;
+    background-size: cover;
+    color:lightgrey;
+    text-shadow: 0 0 3px black;
+
+}
 
 #searchBar{
     border: none;
     border-bottom: 1px black solid;
+    outline: none;
+    background:none;
+    color: white;
+    width: 250px;
 }
 
-#searchBar:active{
+
+#dailyContainer{
+    padding: 20px;
+    display: flex;
+  
+}
+.dailyForecast{
+    padding: 5px;
+    font-size: 18px;
+}
+
+#extraTemp{
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    top: 100px;
+}
+
+#extraTemp > * {
+    padding: none;
+}
+
+#converter{
+    width: 100px;
+    height: 30px;
     border: none;
-    border-bottom: 1px solid black;
+    background: none;
+    font-family: var(--font2);
+    color: lightgrey;
 }
-
-
-
+#converter:hover{
+    box-shadow: 0 0 5px white;
+}
 /* todo: make the cursor like a cloud or something to do with the temperature in the area */
