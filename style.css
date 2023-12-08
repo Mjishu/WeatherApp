@@ -5,10 +5,11 @@
 
 body{
     font-family: var(--font1);
-    background: url('./Images/pexels-finn-protzmann-2197889.jpg')no-repeat center center fixed;
+    background: url('./Images/pexels-aleksandar-pasaric-2341830.jpg')no-repeat center center fixed;
     background-size: cover;
     color:lightgrey;
     text-shadow: 0 0 3px black;
+
 
 }
 
@@ -25,22 +26,29 @@ body{
 #dailyContainer{
     padding: 20px;
     display: flex;
-  
+    justify-content: space-around;
+    margin-top: 350px;
 }
 .dailyForecast{
     padding: 5px;
-    font-size: 18px;
+    font-size: 25px;
+  
+
 }
 
 #extraTemp{
-    font-size: 20px;
-    position: absolute;
+    font-size: 24px;
+    position: fixed;
     right: 20px;
     top: 100px;
+    padding-right: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
-#extraTemp > * {
-    padding: none;
+.spanEx{
+    padding: 10px;
+    
 }
 
 #converter{
@@ -51,7 +59,41 @@ body{
     font-family: var(--font2);
     color: lightgrey;
 }
-#converter:hover{
-    box-shadow: 0 0 5px white;
+
+.minTemp{
+    font-size: 16px;
+}
+
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+a:link{
+    color: white;
+    text-decoration: none;
+}
+
+#mainHolder{
+    padding: 50px;
+    position: relative;
+    top: 100px;
+
+   
+}
+
+#holder{
+    font-size: 20px;
+}
+
+button{
+    text-align: start;
+    padding: none;
+}
+
+.mainTemp{
+    padding: none;
+    font-size: 45px;
+    margin: none;
+    border: none;
 }
 /* todo: make the cursor like a cloud or something to do with the temperature in the area */

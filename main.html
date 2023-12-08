@@ -7,18 +7,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <span>
-        <h1 id="mainTemp"></h1>
+    <div id="mainHolder">
         <p id="holder"></p>
-        <img src="" alt="" id="cloudImg">
-        <div id="extraTemp"></div>
-    </span>
-    <input type="text" id="searchBar" placeholder="location" onkeydown="searchEnter(this)">
+        <h1 id="mainTemp"></h1>
+        <div id="tempConvertContainer"><button id="converter" onclick="changeUnit()"></button></div>
+        <img src="" alt="" id="cloudImg"><br>
+        <input type="text" id="searchBar" placeholder="location" onkeydown="searchEnter(this)">
+    </div>
+    <div id="extraTemp"></div>
+
+    
     <div id="dailyContainer"></div>
-    <div id="tempConvertContainer"><button id="converter" onclick="changeUnit()">Display</button></div>
+    
 
-
-
+Icons by <a href="https://icons8.com">Icons8</a>
     <script src="app.js"></script>
 </body>
 </html>
